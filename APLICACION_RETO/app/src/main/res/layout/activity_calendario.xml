@@ -18,32 +18,53 @@
 
             <CalendarView
                 android:id="@+id/calendarView"
+                style="Widget.CalendarView.Custom"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
-                android:layout_weight="0" />
+                android:layout_weight="0"
+                android:weekDayTextAppearance="@style/Theme.AppCompat"
+                android:unfocusedMonthDateColor="@color/purple_700"
+                android:selectedWeekBackgroundColor="@color/purple_200"
+                android:weekSeparatorLineColor="@color/purple_200"
+                android:focusedMonthDateColor="@color/purple_200"
+                android:weekNumberColor="@color/purple_200"/>
 
             <TimePicker
                 android:id="@+id/id_reloj"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:timePickerMode="spinner" />
+                android:timePickerMode="spinner"
+                android:padding="16dp"/>
 
-            <EditText
-                android:id="@+id/txt_nota"
-                android:layout_width="381dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="35dp"
-                android:layout_marginBottom="15dp"
-                android:ems="10"
-                android:gravity="start|top"
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:startIconDrawable="@drawable/ic_nota"
                 android:hint="Nota"
-                android:inputType="textMultiLine"
-                android:minHeight="48dp"
-                tools:ignore="SpeakableTextPresentCheck" />
+                android:padding="16dp"
+                app:helperText="Required"
+                app:counterEnabled="true"
+                app:counterMaxLength="250">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txt_nota"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textMultiLine">
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
 
             <Button
                 android:id="@+id/btnAgregar"
+                style="@style/EstiloBoton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="35dp"

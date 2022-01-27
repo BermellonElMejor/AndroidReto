@@ -89,8 +89,6 @@ public class CalendarioActivity extends AppCompatActivity {
                 int minutos=reloj.getMinute();
                 hora=horas+":"+minutos;
 
-
-
                 if(nota_texto.getText().toString().length()>0) {
                     String descripcion=nota_texto.getText().toString();
                     UsuariosSQLiteHelper usdbh = new UsuariosSQLiteHelper(getApplicationContext(), "DBUsuarios", null, 1);
@@ -105,8 +103,6 @@ public class CalendarioActivity extends AppCompatActivity {
                 }
             }
         });
-
-
     }
 
     //Método para convertir de argumentos int a fecha en String

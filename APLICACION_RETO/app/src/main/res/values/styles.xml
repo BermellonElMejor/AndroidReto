@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="EstiloBoton" >
+        <item name="android:background">#00FFFFFF</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:radius">100dp</item>
+    </style>
+
+
+    <style name="Widget.CalendarView.Custom" parent="android:Widget.CalendarView">
+        <item name="android:focusedMonthDateColor">@color/purple_700</item>
+        <item name="android:weekNumberColor">@color/purple_700</item>
+        <item name="android:selectedWeekBackgroundColor">@color/purple_700</item>
+        <item name="android:selectedDateVerticalBar">@color/purple_700</item>
+        <item name="android:unfocusedMonthDateColor">@color/purple_700</item>
+        <item name="android:weekDayTextAppearance">@style/TextAppearance.AppCompat.Small</item>
+        <item name="android:dateTextAppearance">@style/TextAppearance.AppCompat.Small</item>
+    </style>
+</resources>
