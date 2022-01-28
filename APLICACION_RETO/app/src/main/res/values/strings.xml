@@ -5,4 +5,8 @@
     <string name="menu3">Gestión de pedidos</string>
     <string name="menu4">Envíos a delegaciones</string>
     <string name="agregar">Agregar</string>
+    <string name="iniciarSesion">INICIAR SESIÓN</string>
+    <string name="inicio">INICIO DE SESIÓN</string>
+    <string name="usr">Usuario</string>
+    <string name="pwd">Contraseña</string>
 </resources>
