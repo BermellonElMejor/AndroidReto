@@ -11,6 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -18,25 +19,16 @@
 
             <CalendarView
                 android:id="@+id/calendarView"
-                style="Widget.CalendarView.Custom"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="15dp"
-                android:layout_weight="0"
-                android:weekDayTextAppearance="@style/Theme.AppCompat"
-                android:unfocusedMonthDateColor="@color/purple_700"
-                android:selectedWeekBackgroundColor="@color/purple_200"
-                android:weekSeparatorLineColor="@color/purple_200"
-                android:focusedMonthDateColor="@color/purple_200"
-                android:weekNumberColor="@color/purple_200"/>
+                style="@android:style/Widget.Material.Light.CalendarView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0" />
 
             <TimePicker
                 android:id="@+id/id_reloj"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:timePickerMode="spinner"
-                android:padding="16dp"/>
-
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:timePickerMode="spinner" />
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
@@ -61,15 +53,18 @@
             </com.google.android.material.textfield.TextInputLayout>
 
 
-
             <Button
                 android:id="@+id/btnAgregar"
-                style="@style/EstiloBoton"
+                style="?attr/materialButtonOutlinedStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="35dp"
-                android:layout_marginBottom="15dp"
-                android:text="@string/agregar" />
+                android:layout_gravity="center"
+                android:strokeColor="@color/morado_oscuro"
+                android:text="@string/agregar"
+                android:textColor="#282139"
+                app:backgroundTint="@color/white"
+                app:cornerRadius="20dp"/>
+
 
         </LinearLayout>
     </ScrollView>
