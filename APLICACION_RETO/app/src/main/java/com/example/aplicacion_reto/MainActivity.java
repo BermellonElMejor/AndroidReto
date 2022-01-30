@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button btnPruebaBDD = findViewById(R.id.btnPruebaBDD);
+      //  Button btnPruebaBDD = findViewById(R.id.btnPruebaBDD);
         Button menu1 = findViewById(R.id.btnMenu1);
         Button menu2 = findViewById(R.id.btnMenu2);
         Button menu3 = findViewById(R.id.btnMenu3);
@@ -50,9 +50,8 @@ public class MainActivity extends AppCompatActivity {
         telefono.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String numero_telefono=telefono.getText().toString();
-                String url="tel:+34"+numero_telefono;
 
+                String url="tel:+34688843432";
                 Intent intent =new Intent(Intent.ACTION_VIEW, Uri.parse(url));
                 startActivity(intent);
             }
@@ -62,10 +61,7 @@ public class MainActivity extends AppCompatActivity {
         gmail.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String txt_gmail=gmail.getText().toString();
-                Toast toast = Toast.makeText(getApplicationContext(), ""+txt_gmail, Toast.LENGTH_LONG);
-                toast.show();
-                String url="mailto:"+txt_gmail;
+                String url="mailto:aunai888@gmail.com";
                 Intent intent =new Intent(Intent.ACTION_VIEW, Uri.parse(url));
                 startActivity(intent);
             }
@@ -113,26 +109,26 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        btnPruebaBDD.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                UsuariosSQLiteHelper usdbh =
-                        new UsuariosSQLiteHelper(getApplicationContext(), "DBUsuarios", null, 1);
-
-                SQLiteDatabase db = usdbh.getWritableDatabase();
-
-                //Si hemos abierto correctamente la base de datos
-                if(db != null)
-                {
-                    //Insertamos 5 usuarios de ejemplo
-
-                        db.execSQL("INSERT INTO Almacen_Deleg (descripcion) " +
-                                "VALUES ('Ejemplo')");
-                    //Cerramos la base de datos
-                    db.close();
-                }
-            }
-        });
+//        btnPruebaBDD.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                UsuariosSQLiteHelper usdbh =
+//                        new UsuariosSQLiteHelper(getApplicationContext(), "DBUsuarios", null, 1);
+//
+//                SQLiteDatabase db = usdbh.getWritableDatabase();
+//
+//                //Si hemos abierto correctamente la base de datos
+//                if(db != null)
+//                {
+//                    //Insertamos 5 usuarios de ejemplo
+//
+//                        db.execSQL("INSERT INTO Almacen_Deleg (descripcion) " +
+//                                "VALUES ('Ejemplo')");
+//                    //Cerramos la base de datos
+//                    db.close();
+//                }
+//            }
+//        });
 
     }
     @RequiresApi(api = Build.VERSION_CODES.M)

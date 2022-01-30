@@ -4,61 +4,80 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SesionActivity">
+    tools:context=".CalendarioActivity">
 
-    <EditText
-        android:id="@+id/editUsuario"
-        android:layout_width="wrap_content"
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="40dp"
-        android:ems="10"
-        android:hint="@string/usr"
-        android:inputType="textPersonName"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtIniciarSesion" />
-
-    <EditText
-        android:id="@+id/editPwd"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="8dp"
-        android:ems="10"
-        android:hint="@string/pwd"
-        android:inputType="textPassword"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editUsuario" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="225dp"
-        android:layout_height="168dp"
-        android:layout_marginStart="92dp"
-        android:layout_marginTop="44dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/gaming_grandma_logo" />
+        app:layout_constraintVertical_bias="0.474">
 
-    <TextView
-        android:id="@+id/txtIniciarSesion"
-        android:layout_width="206dp"
-        android:layout_height="41dp"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="48dp"
-        android:text="@string/inicio"
-        android:textSize="25dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
-    <Button
-        android:id="@+id/btnIniciar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="128dp"
-        android:layout_marginTop="36dp"
-        android:text="@string/iniciarSesion"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editPwd" />
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Usuario"
+            android:padding="16dp"
+            app:counterEnabled="true"
+            app:counterMaxLength="40"
+            app:helperText="Required"
+            app:startIconDrawable="@drawable/ic_usuario">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textMultiLine">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Contraseña"
+            android:padding="16dp"
+            app:counterEnabled="true"
+            app:counterMaxLength="40"
+            app:helperText="Required"
+            app:startIconDrawable="@drawable/ic_candado"
+            app:endIconMode="password_toggle">
+
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editPwd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textMultiLine">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnIniciar"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:strokeColor="@color/morado_oscuro"
+            android:text="@string/agregar"
+            android:textColor="#282139"
+            app:backgroundTint="@color/white"
+            app:cornerRadius="20dp" />
+
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
