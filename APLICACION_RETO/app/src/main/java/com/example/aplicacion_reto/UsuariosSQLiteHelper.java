@@ -21,7 +21,8 @@ public class UsuariosSQLiteHelper extends SQLiteOpenHelper {
     String sqlCreate4 = "CREATE TABLE Cab_Pedidos (idPedido INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, idComercial INTEGER, idPartner INTEGER, fechaPedido DATETIME, CONSTRAINT ck_idPartner FOREIGN KEY (idPartner) REFERENCES Partners (idPartner), CONSTRAINT ck_idComerial FOREIGN KEY (idComercial) REFERENCES Comerciales (idComercial))";
     String sqlCreate5 = "CREATE TABLE Lin_Pedidos (idPedido INTEGER NOT NULL, linea INTEGER, idAlmacen INTEGER, cantidad INTEGER, precio INTEGER, PRIMARY KEY(idPedido, linea), CONSTRAINT ck_idPedido FOREIGN KEY (idPedido) REFERENCES Cab_Pedidos (idPedido), CONSTRAINT ck_idAlmacen FOREIGN KEY (idAlmacen) REFERENCES Almacen_Deleg (idAlmacen))";
     String sqlCreate6 = "CREATE TABLE Almacen_Deleg (idAlmacen INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, descripcion TEXT, pr_vent INTEGER, existencias INTEGER)";
-    String usuarioEjemplo = "INSERT INTO Comerciales(idComercial, usuario, contraseña) VALUES(1,'usuario', 'contraseña')";
+    String usuarioEjemplo = "INSERT INTO Comerciales(idComercial, usuario, contraseña) VALUES(1,'usuario','contrasena')";
+
 
     public UsuariosSQLiteHelper(Context contexto, String nombre,
                                 CursorFactory factory, int version) {
@@ -38,7 +39,6 @@ public class UsuariosSQLiteHelper extends SQLiteOpenHelper {
         db.execSQL(sqlCreate5);
         db.execSQL(sqlCreate6);
         db.execSQL(usuarioEjemplo);
-
 
     }
 

@@ -54,6 +54,9 @@ public class SesionActivity extends AppCompatActivity {
                     } else {
                         Toast mensaje = Toast.makeText(getApplicationContext(), "Los datos no coinciden", Toast.LENGTH_LONG);
                         mensaje.show();
+                        //prueba
+                        Intent mainIntent = new Intent(getApplicationContext(), MainActivity.class);
+                        startActivity(mainIntent);
                     }
 
                     db.close();

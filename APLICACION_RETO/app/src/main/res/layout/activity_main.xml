@@ -5,104 +5,184 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    tools:layout_editor_absoluteX="0dp"
-    tools:layout_editor_absoluteY="-23dp">
+    tools:layout_editor_absoluteX="-1dp"
+    tools:layout_editor_absoluteY="37dp">
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="192dp"
-        android:layout_height="121dp"
+        android:layout_width="176dp"
+        android:layout_height="110dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.1"
+        app:layout_constraintVertical_bias="0.077"
         app:srcCompat="@drawable/gaming_grandma_logo"
         tools:srcCompat="@drawable/gaming_grandma_logo" />
 
-    <TextView
-        android:id="@+id/lbl_telefono"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="688843432"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.168"
+    <ImageButton
+        android:id="@+id/boton_mapa"
+        android:layout_width="53dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="244dp"
+        android:layout_marginEnd="88dp"
+        android:adjustViewBounds="true"
+        android:background="@color/transparente"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/boton_telefono"
+        app:layout_constraintHorizontal_bias="0.513"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.32" />
-
-    <Button
-        android:id="@+id/btnMenu2"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="20dp"
-        android:text="@string/menu2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnMenu1" />
-
-    <Button
-        android:id="@+id/btnMenu4"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="20dp"
-        android:text="@string/menu4"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnMenu3" />
-
-    <Button
-        android:id="@+id/btnMenu1"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="28dp"
-        android:text="@string/menu1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lbl_gmail" />
-
-    <Button
-        android:id="@+id/btnMenu3"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="20dp"
-        android:text="@string/menu3"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnMenu2" />
-
-    <TextView
-        android:id="@+id/lbl_gmail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="aunai888@gmail.com"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.207"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.376" />
-
-    <Button
-        android:id="@+id/btnMaps"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="56dp"
-        android:layout_marginBottom="44dp"
-        android:text="Maps"
-        app:layout_constraintBottom_toTopOf="@+id/btnMenu1"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:srcCompat="@drawable/mapa"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageButton
-        android:id="@+id/imageButton3"
-        android:layout_width="203dp"
-        android:layout_height="35dp"
-        android:layout_gravity="center"
+        android:id="@+id/boton_telefono"
+        android:layout_width="52dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="244dp"
+        android:layout_marginEnd="88dp"
+        android:background="@color/transparente"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/boton_gmail"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/telefono"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/boton_gmail"
+        android:layout_width="58dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="244dp"
+        android:layout_marginEnd="52dp"
+        android:background="@color/transparente"
+        android:contentDescription="Link_gmail"
+        android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/gmail"
-        tools:ignore="SpeakableTextPresentCheck" />
+        app:srcCompat="@drawable/gmail" />
+
+    <ImageButton
+        android:id="@+id/boton_partner"
+        android:layout_width="125dp"
+        android:layout_height="110dp"
+        android:background="@color/transparente"
+        android:contentDescription="boton_partner"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.763"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.568"
+        app:srcCompat="@drawable/clientes" />
+
+    <ImageButton
+        android:id="@+id/boton_calendario"
+        android:layout_width="125dp"
+        android:layout_height="110dp"
+        android:background="@color/transparente"
+        android:contentDescription="boton_calendario"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.184"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.568"
+        app:srcCompat="@drawable/calendario" />
+
+    <ImageButton
+        android:id="@+id/boton_delegaciones"
+        android:layout_width="125dp"
+        android:layout_height="110dp"
+        android:background="@color/transparente"
+        android:contentDescription="boton_delegaciones"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.19"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.832"
+        app:srcCompat="@drawable/delegaciones" />
+
+    <ImageButton
+        android:id="@+id/boton_pedidos"
+        android:layout_width="125dp"
+        android:layout_height="110dp"
+        android:background="@color/transparente"
+        android:contentDescription="boton_pedido"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.763"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.832"
+        app:srcCompat="@drawable/pedidos" />
+
+    <TextView
+        android:id="@+id/lbl_calendario"
+        style="@android:style/Widget.DeviceDefault.Light.TextView.SpinnerItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:fontStyle="normal"
+        android:text="Calendario"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.214"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.67" />
+
+    <TextView
+        android:id="@+id/lbl_clientes"
+        style="@android:style/Widget.DeviceDefault.Light.TextView.SpinnerItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:fontStyle="normal"
+        android:text="Clientes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.732"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.67" />
+
+    <TextView
+        android:id="@+id/lbl_distribuidores"
+        style="@android:style/Widget.DeviceDefault.Light.TextView.SpinnerItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:fontStyle="normal"
+        android:text="Distribuidores"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.196"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.908" />
+
+    <TextView
+        android:id="@+id/lbl_pedidos"
+        style="@android:style/Widget.DeviceDefault.Light.TextView.SpinnerItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:fontStyle="normal"
+        android:text="Pedidos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.73"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.908" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

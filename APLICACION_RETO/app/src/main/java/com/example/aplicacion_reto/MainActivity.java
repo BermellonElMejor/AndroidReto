@@ -7,12 +7,13 @@ import androidx.core.content.ContextCompat;
 import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.database.sqlite.SQLiteDatabase;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.provider.ContactsContract;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -27,79 +28,33 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
       //  Button btnPruebaBDD = findViewById(R.id.btnPruebaBDD);
-        Button menu1 = findViewById(R.id.btnMenu1);
-        Button menu2 = findViewById(R.id.btnMenu2);
-        Button menu3 = findViewById(R.id.btnMenu3);
-        Button menu4 = findViewById(R.id.btnMenu4);
+
+        ImageButton boton_mapa=findViewById(R.id.boton_mapa);
+        ImageButton boton_telefono=findViewById(R.id.boton_telefono);
+        ImageButton boton_gmail=findViewById(R.id.boton_gmail);
+        ImageButton boton_calendario=findViewById(R.id.boton_calendario);
+        ImageButton boton_partner=findViewById(R.id.boton_partner);
+        ImageButton boton_pedidos=findViewById(R.id.boton_pedidos);
+        ImageButton boton_delegaciones=findViewById(R.id.boton_delegaciones);
+
+
         Intent calendarioIntent =new Intent(this, CalendarioActivity.class);
         Intent partnersIntent =new Intent(this, PartnersActivity.class);
         //Intent pedidosIntent =new Intent(this, falta el layout .class);
         Intent enviosIntent =new Intent(this, activity_envios.class);
 
-        Button btnMaps = findViewById(R.id.btnMaps);
 
 
 
-        TextView telefono=findViewById(R.id.lbl_telefono);
-        TextView gmail=findViewById(R.id.lbl_gmail);
+
+
+
 
         verificarPermisos();
 
 
-        //Listener Telefono movil
-        telefono.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
 
-                String url="tel:+34688843432";
-                Intent intent =new Intent(Intent.ACTION_VIEW, Uri.parse(url));
-                startActivity(intent);
-            }
-        });
-
-        //Listener Gmail
-        gmail.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String url="mailto:aunai888@gmail.com";
-                Intent intent =new Intent(Intent.ACTION_VIEW, Uri.parse(url));
-                startActivity(intent);
-            }
-        });
-
-        menu1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                startActivity(calendarioIntent);
-            }
-        });
-
-        menu2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                startActivity(partnersIntent);
-            }
-        });
-
-        menu3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                //startActivity(pedidosIntent);
-            }
-        });
-
-        menu4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                startActivity(enviosIntent);
-            }
-        });
-
-        btnMaps.setOnClickListener(new View.OnClickListener() {
+        boton_mapa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Uri gmmIntentUri = Uri.parse("google.streetview:cbll=43.30472651965252,-2.01687088777822");
@@ -108,6 +63,53 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(mapIntent);
             }
         });
+
+        boton_telefono.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String url="tel:+34688843432";
+                Intent intent =new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+                startActivity(intent);
+            }
+        });
+
+        boton_gmail.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String url="mailto:aunai888@gmail.com";
+                Intent intent =new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+                startActivity(intent);
+            }
+        });
+
+        boton_calendario.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(calendarioIntent);
+            }
+        });
+
+        boton_partner.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(partnersIntent);
+            }
+        });
+
+        boton_pedidos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //startActivity(pedidosIntent);
+            }
+        });
+
+        boton_delegaciones.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(enviosIntent);
+            }
+        });
+
 
 //        btnPruebaBDD.setOnClickListener(new View.OnClickListener() {
 //            @Override
@@ -129,6 +131,8 @@ public class MainActivity extends AppCompatActivity {
 //                }
 //            }
 //        });
+
+
 
     }
     @RequiresApi(api = Build.VERSION_CODES.M)

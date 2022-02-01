@@ -11,4 +11,5 @@
     <color name="morado_oscuro">#461c50</color>
     <color name="morado_ligero">#6d2c7d</color>
     <color name="morado_web">#800080</color>
+    <color name="transparente">#00000000</color>
 </resources>
