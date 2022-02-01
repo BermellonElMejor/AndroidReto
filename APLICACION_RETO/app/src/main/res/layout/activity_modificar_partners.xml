@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ModificarPartners">
+
+    <TextView
+        android:id="@+id/lbl_modificar_partner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:fontStyle="normal"
+        android:text="Modificar Partner"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_modificar_IdPartner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_modificar_comercial2"
+        android:layout_width="80dp"
+        android:layout_height="34dp"
+        android:layout_marginBottom="36dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-black"
+        android:fontStyle="normal"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text="IdComercial"
+        app:layout_constraintBottom_toTopOf="@+id/btn_modificar_modidicar"
+        app:layout_constraintEnd_toStartOf="@+id/txt_modificar_nombre"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/txt_modificar_telefono2"
+        android:layout_width="80dp"
+        android:layout_height="34dp"
+        android:layout_marginBottom="32dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-black"
+        android:fontStyle="normal"
+        android:hint="Nombre_Partner:"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text="Teléfono:"
+        app:layout_constraintBottom_toTopOf="@+id/txt_modificar_email2"
+        app:layout_constraintEnd_toStartOf="@+id/txt_modificar_nombre"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/txt_modificar_poblacion2"
+        android:layout_width="80dp"
+        android:layout_height="34dp"
+        android:layout_marginBottom="32dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-black"
+        android:fontStyle="normal"
+        android:hint="Nombre_Partner:"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text="Población:"
+        app:layout_constraintBottom_toTopOf="@+id/txt_modificar_cif2"
+        app:layout_constraintEnd_toStartOf="@+id/txt_modificar_nombre"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/txt_modificar_cif2"
+        android:layout_width="80dp"
+        android:layout_height="34dp"
+        android:layout_marginBottom="36dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-black"
+        android:fontStyle="normal"
+        android:hint="Nombre_Partner:"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text="CIF:"
+        app:layout_constraintBottom_toTopOf="@+id/txt_modificar_telefono2"
+        app:layout_constraintEnd_toStartOf="@+id/txt_modificar_nombre"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/txt_modificar_email2"
+        android:layout_width="80dp"
+        android:layout_height="34dp"
+        android:layout_marginBottom="32dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-black"
+        android:fontStyle="normal"
+        android:hint="Nombre_Partner:"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text="Gmail:"
+        app:layout_constraintBottom_toTopOf="@+id/txt_modificar_comercial2"
+        app:layout_constraintEnd_toStartOf="@+id/txt_modificar_nombre"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/txt_modificar_direccion2"
+        android:layout_width="80dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-black"
+        android:fontStyle="normal"
+        android:hint="Nombre_Partner:"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text="Dirección:"
+        app:layout_constraintBottom_toTopOf="@+id/txt_modificar_poblacion2"
+        app:layout_constraintEnd_toStartOf="@+id/txt_modificar_direccion"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_modificar_nombre"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/txt_modificar_nombre2"
+        android:layout_width="80dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-black"
+        android:fontStyle="normal"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text="Nombre:"
+        app:layout_constraintBottom_toTopOf="@+id/txt_modificar_direccion2"
+        app:layout_constraintEnd_toStartOf="@+id/txt_modificar_nombre"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_modificar_IdPartner"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/txt_modificar_IdPartner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-black"
+        android:fontStyle="normal"
+        android:hint="Id_Partner"
+        android:inputType="number"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_modificar_nombre"
+        app:layout_constraintEnd_toStartOf="@+id/btn_modificar_buscar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.922" />
+
+    <TextView
+        android:id="@+id/txt_modificar_telefono"
+        android:layout_width="154dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-black"
+        android:fontStyle="normal"
+        android:inputType="number"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_modificar_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.33"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/txt_modificar_comercial"
+        android:layout_width="154dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-black"
+        android:fontStyle="normal"
+        android:inputType="number"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_modificar_modidicar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.33"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/txt_modificar_cif"
+        android:layout_width="154dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="28dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-black"
+        android:fontStyle="normal"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_modificar_telefono"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.33"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/txt_modificar_poblacion"
+        android:layout_width="154dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-black"
+        android:fontStyle="normal"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_modificar_cif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.022"
+        app:layout_constraintStart_toEndOf="@+id/txt_modificar_poblacion2"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/txt_modificar_direccion"
+        android:layout_width="154dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-black"
+        android:fontStyle="normal"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_modificar_poblacion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.326"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/txt_modificar_nombre"
+        android:layout_width="154dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-black"
+        android:fontStyle="normal"
+        android:foregroundGravity="top"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_modificar_direccion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.33"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/txt_modificar_email"
+        android:layout_width="154dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-black"
+        android:fontStyle="normal"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_modificar_comercial"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.33"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/btn_modificar_buscar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="588dp"
+        android:fontFamily="sans-serif-black"
+        android:fontStyle="normal"
+        android:text="BUSCAR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.854"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_modificar_modidicar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:fontStyle="normal"
+        android:hint="Id_Partner"
+        android:text="Modificar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.414"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txt_modificado_nombre"
+        android:layout_width="134dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/txt_modificado_direccion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.289"
+        app:layout_constraintStart_toEndOf="@+id/txt_modificar_nombre"
+        app:layout_constraintTop_toBottomOf="@+id/btn_modificar_buscar"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <EditText
+        android:id="@+id/txt_modificado_direccion"
+        android:layout_width="134dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:hint="Dirección"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/txt_modificado_poblacion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.282"
+        app:layout_constraintStart_toEndOf="@+id/txt_modificar_direccion" />
+
+    <EditText
+        android:id="@+id/txt_modificado_poblacion"
+        android:layout_width="134dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:hint="Población"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/txt_modificado_cif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.263"
+        app:layout_constraintStart_toEndOf="@+id/txt_modificar_poblacion" />
+
+    <EditText
+        android:id="@+id/txt_modificado_cif"
+        android:layout_width="134dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="CIF"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/txt_modificado_telefono"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.289"
+        app:layout_constraintStart_toEndOf="@+id/txt_modificar_cif" />
+
+    <EditText
+        android:id="@+id/txt_modificado_telefono"
+        android:layout_width="134dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:hint="Teléfono"
+        android:inputType="phone"
+        app:layout_constraintBottom_toTopOf="@+id/txt_modificado_gmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.263"
+        app:layout_constraintStart_toEndOf="@+id/txt_modificar_telefono" />
+
+    <EditText
+        android:id="@+id/txt_modificado_gmail"
+        android:layout_width="134dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:hint="Gmail"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/txt_modificado_idComercial"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.263"
+        app:layout_constraintStart_toEndOf="@+id/txt_modificar_email" />
+
+    <EditText
+        android:id="@+id/txt_modificado_idComercial"
+        android:layout_width="134dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:hint="IdComercial"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/btn_modificar_modidicar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.263"
+        app:layout_constraintStart_toEndOf="@+id/txt_modificar_comercial" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

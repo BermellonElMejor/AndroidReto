@@ -7,7 +7,7 @@
     tools:context=".AltaActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/lbl_modificar_partner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="56dp"
@@ -17,7 +17,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/edtNombre"
+        android:id="@+id/txt_modificar_nombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -26,10 +26,10 @@
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/lbl_modificar_partner" />
 
     <EditText
-        android:id="@+id/edtDireccion"
+        android:id="@+id/txt_modificar_direccion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -38,10 +38,10 @@
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtNombre" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_modificar_nombre" />
 
     <EditText
-        android:id="@+id/edtPoblacion"
+        android:id="@+id/txt_modificar_poblacion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -50,10 +50,10 @@
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtDireccion" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_modificar_direccion" />
 
     <EditText
-        android:id="@+id/edtCIF"
+        android:id="@+id/txt_modificar_cif"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -62,10 +62,10 @@
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtPoblacion" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_modificar_poblacion" />
 
     <EditText
-        android:id="@+id/edtTelefono"
+        android:id="@+id/txt_modificar_telefono"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -74,10 +74,10 @@
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtCIF" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_modificar_cif" />
 
     <EditText
-        android:id="@+id/edtEmail"
+        android:id="@+id/txt_modificar_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -86,10 +86,10 @@
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtTelefono" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_modificar_telefono" />
 
     <EditText
-        android:id="@+id/edtComercial"
+        android:id="@+id/txt_modificar_comercial"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -99,15 +99,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtEmail" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_modificar_email" />
 
     <Button
-        android:id="@+id/btnAlta2"
+        android:id="@+id/btn_modificar_buscar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="Dar de alta"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtComercial" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_modificar_comercial" />
 </androidx.constraintlayout.widget.ConstraintLayout>

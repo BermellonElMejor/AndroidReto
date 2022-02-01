@@ -12,6 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.APLICACION_RETO">
         <activity
+            android:name=".ModificarPartners"
+            android:exported="false" />
+        <activity
+            android:name=".ConsultaPartners"
+            android:exported="false" />
+        <activity
+            android:name=".DarBajaPartners"
+            android:exported="false" />
+        <activity
             android:name=".AltaActivity"
             android:exported="false" />
         <activity

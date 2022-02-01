@@ -22,6 +22,8 @@ public class UsuariosSQLiteHelper extends SQLiteOpenHelper {
     String sqlCreate5 = "CREATE TABLE Lin_Pedidos (idPedido INTEGER NOT NULL, linea INTEGER, idAlmacen INTEGER, cantidad INTEGER, precio INTEGER, PRIMARY KEY(idPedido, linea), CONSTRAINT ck_idPedido FOREIGN KEY (idPedido) REFERENCES Cab_Pedidos (idPedido), CONSTRAINT ck_idAlmacen FOREIGN KEY (idAlmacen) REFERENCES Almacen_Deleg (idAlmacen))";
     String sqlCreate6 = "CREATE TABLE Almacen_Deleg (idAlmacen INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, descripcion TEXT, pr_vent INTEGER, existencias INTEGER)";
     String usuarioEjemplo = "INSERT INTO Comerciales(idComercial, usuario, contraseña) VALUES(1,'usuario','contrasena')";
+    String parterEjemplo = "INSERT INTO Partners(idPartner,nombre,direccion,poblacion,cif,telefono,email,idComercial) VALUES(1,'Partner','direccion_partner','poblacion_partner','cif_partner','telefono_partner','email_partner',1)";
+    String parterEjemplo1 = "INSERT INTO Partners(idPartner,nombre,direccion,poblacion,cif,telefono,email,idComercial) VALUES(2,'Javi','direccion_de_javi','Donostia','2665666JK','681662639','gmaildeJaVi@gmail.com',1)";
 
 
     public UsuariosSQLiteHelper(Context contexto, String nombre,
@@ -39,6 +41,8 @@ public class UsuariosSQLiteHelper extends SQLiteOpenHelper {
         db.execSQL(sqlCreate5);
         db.execSQL(sqlCreate6);
         db.execSQL(usuarioEjemplo);
+        db.execSQL(parterEjemplo);
+        db.execSQL(parterEjemplo1);
 
     }
 
@@ -60,5 +64,7 @@ public class UsuariosSQLiteHelper extends SQLiteOpenHelper {
         db.execSQL(sqlCreate5);
         db.execSQL(sqlCreate6);
         db.execSQL(usuarioEjemplo);
+        db.execSQL(parterEjemplo);
+        db.execSQL(parterEjemplo1);
     }
 }

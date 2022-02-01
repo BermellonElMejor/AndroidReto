@@ -18,14 +18,14 @@ public class AltaActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_alta);
 
-        EditText edtNombre = findViewById(R.id.edtNombre);
-        EditText edtDireccion = findViewById(R.id.edtDireccion);
-        EditText edtPoblacion = findViewById(R.id.edtPoblacion);
-        EditText edtCIF = findViewById(R.id.edtCIF);
-        EditText edtTelefono = findViewById(R.id.edtTelefono);
-        EditText edtEmail = findViewById(R.id.edtEmail);
-        EditText edtComercial = findViewById(R.id.edtComercial);
-        Button DarAltaBtn = findViewById(R.id.btnAlta2);
+        EditText edtNombre = findViewById(R.id.txt_modificar_nombre);
+        EditText edtDireccion = findViewById(R.id.txt_modificar_direccion);
+        EditText edtPoblacion = findViewById(R.id.txt_modificar_poblacion);
+        EditText edtCIF = findViewById(R.id.txt_modificar_cif);
+        EditText edtTelefono = findViewById(R.id.txt_modificar_telefono);
+        EditText edtEmail = findViewById(R.id.txt_modificar_email);
+        EditText edtComercial = findViewById(R.id.txt_modificar_comercial);
+        Button DarAltaBtn = findViewById(R.id.btn_modificar_buscar);
 
         DarAltaBtn.setOnClickListener(new View.OnClickListener() {
             @Override
