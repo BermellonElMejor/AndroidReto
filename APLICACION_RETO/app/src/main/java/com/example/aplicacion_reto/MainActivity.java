@@ -44,12 +44,6 @@ public class MainActivity extends AppCompatActivity {
         Intent enviosIntent =new Intent(this, activity_envios.class);
 
 
-
-
-
-
-
-
         verificarPermisos();
 
 

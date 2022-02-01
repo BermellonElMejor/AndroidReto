@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.APLICACION_RETO">
         <activity
+            android:name=".AltaActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true" />
         <activity

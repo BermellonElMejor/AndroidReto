@@ -28,14 +28,13 @@
         android:layout_gravity="center"
         android:layout_marginStart="52dp"
         android:layout_marginTop="244dp"
-        android:layout_marginEnd="88dp"
         android:adjustViewBounds="true"
         android:background="@color/transparente"
         android:scaleType="fitCenter"
-        app:layout_constraintEnd_toStartOf="@+id/boton_telefono"
-        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintBottom_toTopOf="@+id/boton_calendario"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/mapa"
         tools:ignore="SpeakableTextPresentCheck" />
 
@@ -43,12 +42,17 @@
         android:id="@+id/boton_telefono"
         android:layout_width="52dp"
         android:layout_height="48dp"
-        android:layout_marginTop="244dp"
-        android:layout_marginEnd="88dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="60dp"
         android:background="@color/transparente"
         android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/boton_partner"
         app:layout_constraintEnd_toStartOf="@+id/boton_gmail"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.583"
+        app:layout_constraintStart_toEndOf="@+id/boton_mapa"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.988"
         app:srcCompat="@drawable/telefono"
         tools:ignore="SpeakableTextPresentCheck" />
 
@@ -61,8 +65,10 @@
         android:background="@color/transparente"
         android:contentDescription="Link_gmail"
         android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/boton_partner"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/gmail" />
 
     <ImageButton
