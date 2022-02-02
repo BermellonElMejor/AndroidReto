@@ -169,4 +169,12 @@
         app:srcCompat="@drawable/gaming_grandma_logo"
         tools:srcCompat="@drawable/gaming_grandma_logo" />
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="329dp"
+        tools:layout_editor_absoluteY="100dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
