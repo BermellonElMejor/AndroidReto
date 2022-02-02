@@ -82,6 +82,5 @@ public class DarBajaPartners extends AppCompatActivity {
                 }
             }
         });
-
     }
 }
