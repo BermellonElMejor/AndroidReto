@@ -26,8 +26,8 @@
             android:hint="Usuario"
             android:padding="16dp"
             app:counterEnabled="true"
-            app:counterMaxLength="40"
-            app:helperText="Required"
+            app:counterMaxLength="25"
+            app:helperText="Requerido"
             app:startIconDrawable="@drawable/ic_usuario">
 
 
@@ -35,7 +35,7 @@
                 android:id="@+id/editCita"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:inputType="textMultiLine">
+                android:inputType="text">
 
             </com.google.android.material.textfield.TextInputEditText>
 
@@ -48,18 +48,17 @@
             android:hint="Contraseña"
             android:padding="16dp"
             app:counterEnabled="true"
-            app:counterMaxLength="40"
-            app:helperText="Required"
+            app:counterMaxLength="25"
+            app:helperText="Requerido"
             app:startIconDrawable="@drawable/ic_candado"
             app:endIconMode="password_toggle">
-
 
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/editPwd"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:inputType="textMultiLine">
+                android:inputType="text|textPassword">
 
             </com.google.android.material.textfield.TextInputEditText>
 
