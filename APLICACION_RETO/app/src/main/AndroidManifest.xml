@@ -12,6 +12,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.APLICACION_RETO">
         <activity
+            android:name=".AdaptadorCatalogo"
+            android:exported="true" />
+        <activity
+            android:name=".Catalogo"
+            android:exported="true" />
+        <activity
+            android:name=".gestion_de_pedidos"
+            android:exported="true" />
+        <activity
+            android:name=".AdaptadorProducto"
+            android:exported="true" />
+        <activity
             android:name=".ModificarPartners"
             android:exported="false" />
         <activity

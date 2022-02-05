@@ -21,9 +21,14 @@ public class UsuariosSQLiteHelper extends SQLiteOpenHelper {
     String sqlCreate4 = "CREATE TABLE Cab_Pedidos (idPedido INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, idComercial INTEGER, idPartner INTEGER, fechaPedido DATETIME, CONSTRAINT ck_idPartner FOREIGN KEY (idPartner) REFERENCES Partners (idPartner), CONSTRAINT ck_idComerial FOREIGN KEY (idComercial) REFERENCES Comerciales (idComercial))";
     String sqlCreate5 = "CREATE TABLE Lin_Pedidos (idPedido INTEGER NOT NULL, linea INTEGER, idAlmacen INTEGER, cantidad INTEGER, precio INTEGER, PRIMARY KEY(idPedido, linea), CONSTRAINT ck_idPedido FOREIGN KEY (idPedido) REFERENCES Cab_Pedidos (idPedido), CONSTRAINT ck_idAlmacen FOREIGN KEY (idAlmacen) REFERENCES Almacen_Deleg (idAlmacen))";
     String sqlCreate6 = "CREATE TABLE Almacen_Deleg (idAlmacen INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, descripcion TEXT, pr_vent INTEGER, existencias INTEGER)";
-    String usuarioEjemplo = "INSERT INTO Comerciales(idComercial, usuario, contraseña) VALUES(1,'usuario','contrasena')";
+    String usuarioEjemplo = "INSERT INTO Comerciales(idComercial, usuario, contraseña) VALUES(1,'123','123')";
     String parterEjemplo = "INSERT INTO Partners(idPartner,nombre,direccion,poblacion,cif,telefono,email,idComercial) VALUES(1,'Partner','direccion_partner','poblacion_partner','cif_partner','telefono_partner','email_partner',1)";
     String parterEjemplo1 = "INSERT INTO Partners(idPartner,nombre,direccion,poblacion,cif,telefono,email,idComercial) VALUES(2,'Javi','direccion_de_javi','Donostia','2665666JK','681662639','gmaildeJaVi@gmail.com',1)";
+    String producto1 = "INSERT INTO Almacen_Deleg (descripcion, pr_vent, existencias) VALUES('Teclado',80,100)";
+    String producto2 = "INSERT INTO Almacen_Deleg (descripcion, pr_vent, existencias) VALUES('Ratón',60,100)";
+    String producto3 = "INSERT INTO Almacen_Deleg (descripcion, pr_vent, existencias) VALUES('Alfombrilla',15,100)";
+    String producto4 = "INSERT INTO Almacen_Deleg (descripcion, pr_vent, existencias) VALUES('Silla Gamer',150,50)";
+    String producto5 = "INSERT INTO Almacen_Deleg (descripcion, pr_vent, existencias) VALUES('Taza personalizada',200,50)";
 
 
     public UsuariosSQLiteHelper(Context contexto, String nombre,
@@ -43,6 +48,11 @@ public class UsuariosSQLiteHelper extends SQLiteOpenHelper {
         db.execSQL(usuarioEjemplo);
         db.execSQL(parterEjemplo);
         db.execSQL(parterEjemplo1);
+        db.execSQL(producto1);
+        db.execSQL(producto2);
+        db.execSQL(producto3);
+        db.execSQL(producto4);
+        db.execSQL(producto5);
 
     }
 
@@ -66,5 +76,10 @@ public class UsuariosSQLiteHelper extends SQLiteOpenHelper {
         db.execSQL(usuarioEjemplo);
         db.execSQL(parterEjemplo);
         db.execSQL(parterEjemplo1);
+        db.execSQL(producto1);
+        db.execSQL(producto2);
+        db.execSQL(producto3);
+        db.execSQL(producto4);
+        db.execSQL(producto5);
     }
 }

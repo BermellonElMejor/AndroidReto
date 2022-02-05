@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-      //  Button btnPruebaBDD = findViewById(R.id.btnPruebaBDD);
+        //  Button btnPruebaBDD = findViewById(R.id.btnPruebaBDD);
 
         ImageButton boton_mapa=findViewById(R.id.boton_mapa);
         ImageButton boton_telefono=findViewById(R.id.boton_telefono);
@@ -42,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
         Intent partnersIntent =new Intent(this, PartnersActivity.class);
         //Intent pedidosIntent =new Intent(this, falta el layout .class);
         Intent enviosIntent =new Intent(this, activity_envios.class);
+        Intent pedidosIntent = new Intent(this, Catalogo.class);
 
 
         verificarPermisos();
@@ -93,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
         boton_pedidos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //startActivity(pedidosIntent);
+                startActivity(pedidosIntent);
             }
         });
 
