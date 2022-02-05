@@ -30,7 +30,7 @@
         android:fontStyle="normal"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        android:text="IdComercial"
+        android:text="IdComercial:"
         app:layout_constraintBottom_toTopOf="@+id/btn_modificar_modidicar"
         app:layout_constraintEnd_toStartOf="@+id/txt_modificar_nombre"
         app:layout_constraintHorizontal_bias="0.2"
