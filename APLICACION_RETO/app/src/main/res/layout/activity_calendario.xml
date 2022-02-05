@@ -65,6 +65,19 @@
                 app:backgroundTint="@color/white"
                 app:cornerRadius="20dp"/>
 
+            <Button
+                android:id="@+id/btnVerCita"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:strokeColor="@color/morado_oscuro"
+                android:text="VER CITAS"
+                android:textColor="#282139"
+                app:backgroundTint="@color/white"
+                app:cornerRadius="20dp" />
+
 
         </LinearLayout>
     </ScrollView>

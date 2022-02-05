@@ -32,7 +32,7 @@
 
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/editUsuario"
+                android:id="@+id/editCita"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:inputType="textMultiLine">

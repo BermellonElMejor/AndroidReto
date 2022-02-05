@@ -3,26 +3,28 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/34636/Documents/GitHub/AndroidReto/APLICACION_RETO/app/src/main/res/layout/activity_adaptador_catalogo.xml" value="0.4" />
-        <entry key="..\:/Users/34636/Documents/GitHub/AndroidReto/APLICACION_RETO/app/src/main/res/layout/activity_adaptador_producto.xml" value="0.20878623188405798" />
-        <entry key="..\:/Users/34636/Documents/GitHub/AndroidReto/APLICACION_RETO/app/src/main/res/layout/activity_catalogo.xml" value="0.20878623188405798" />
-        <entry key="..\:/Users/34636/Documents/GitHub/AndroidReto/APLICACION_RETO/app/src/main/res/layout/activity_consulta_partners.xml" value="0.19791666666666666" />
         <entry key="..\:/Users/34636/Documents/GitHub/AndroidReto/APLICACION_RETO/app/src/main/res/layout/activity_envios.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/34636/Documents/GitHub/AndroidReto/APLICACION_RETO/app/src/main/res/layout/activity_gestion_de_pedidos.xml" value="0.2033514492753623" />
-        <entry key="..\:/Users/34636/Documents/GitHub/AndroidReto/APLICACION_RETO/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/34636/Documents/GitHub/AndroidReto/APLICACION_RETO/app/src/main/res/layout/activity_main.xml" value="0.6" />
         <entry key="..\:/Users/34636/Documents/GitHub/AndroidReto/APLICACION_RETO/app/src/main/res/layout/activity_partners.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/34636/Documents/GitHub/AndroidReto/APLICACION_RETO/app/src/main/res/layout/activity_sesion.xml" value="0.22418478260869565" />
-        <entry key="..\:/Users/34636/Documents/GitHub/AndroidReto/APLICACION_RETO/app/src/main/res/layout/list_element.xml" value="0.20878623188405798" />
         <entry key="..\:/Users/aunai/AndroidStudioProjects/APLICACION_RETO/app/src/main/res/layout/activity_main.xml" value="0.4" />
         <entry key="..\:/Users/aunai/Documents/AndroidReto/APLICACION_RETO/app/src/main/res/drawable/custom_buttom.xml" value="0.2421875" />
         <entry key="..\:/Users/aunai/Documents/AndroidReto/APLICACION_RETO/app/src/main/res/drawable/envio.xml" value="0.25833333333333336" />
         <entry key="..\:/Users/aunai/Documents/AndroidReto/APLICACION_RETO/app/src/main/res/drawable/ic_usuario.xml" value="0.1" />
+        <entry key="..\:/Users/aunai/Documents/AndroidReto/APLICACION_RETO/app/src/main/res/layout/activity_adaptador_catalogo.xml" value="0.19880290722530997" />
+        <entry key="..\:/Users/aunai/Documents/AndroidReto/APLICACION_RETO/app/src/main/res/layout/activity_adaptador_citas.xml" value="0.264" />
         <entry key="..\:/Users/aunai/Documents/AndroidReto/APLICACION_RETO/app/src/main/res/layout/activity_alta.xml" value="0.2164855072463768" />
+        <entry key="..\:/Users/aunai/Documents/AndroidReto/APLICACION_RETO/app/src/main/res/layout/activity_baja_partners.xml" value="0.2" />
         <entry key="..\:/Users/aunai/Documents/AndroidReto/APLICACION_RETO/app/src/main/res/layout/activity_calendario.xml" value="0.264" />
+        <entry key="..\:/Users/aunai/Documents/AndroidReto/APLICACION_RETO/app/src/main/res/layout/activity_catalogo.xml" value="0.19880290722530997" />
+        <entry key="..\:/Users/aunai/Documents/AndroidReto/APLICACION_RETO/app/src/main/res/layout/activity_citas.xml" value="0.19880290722530997" />
+        <entry key="..\:/Users/aunai/Documents/AndroidReto/APLICACION_RETO/app/src/main/res/layout/activity_consulta_partners.xml" value="0.2" />
+        <entry key="..\:/Users/aunai/Documents/AndroidReto/APLICACION_RETO/app/src/main/res/layout/activity_dar_alta_partners.xml" value="0.23324275362318841" />
         <entry key="..\:/Users/aunai/Documents/AndroidReto/APLICACION_RETO/app/src/main/res/layout/activity_envios.xml" value="0.23052536231884058" />
-        <entry key="..\:/Users/aunai/Documents/AndroidReto/APLICACION_RETO/app/src/main/res/layout/activity_main.xml" value="0.264" />
-        <entry key="..\:/Users/aunai/Documents/AndroidReto/APLICACION_RETO/app/src/main/res/layout/activity_partners.xml" value="0.11778115501519756" />
+        <entry key="..\:/Users/aunai/Documents/AndroidReto/APLICACION_RETO/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/aunai/Documents/AndroidReto/APLICACION_RETO/app/src/main/res/layout/activity_modificar_partners.xml" value="0.23324275362318841" />
+        <entry key="..\:/Users/aunai/Documents/AndroidReto/APLICACION_RETO/app/src/main/res/layout/activity_partners.xml" value="0.264" />
         <entry key="..\:/Users/aunai/Documents/AndroidReto/APLICACION_RETO/app/src/main/res/layout/activity_sesion.xml" value="0.175" />
+        <entry key="..\:/Users/aunai/Documents/AndroidReto/APLICACION_RETO/app/src/main/res/layout/activity_ver_citas.xml" value="0.19880290722530997" />
         <entry key="..\:/Users/aunai/Documents/AndroidReto/APLICACION_RETO/app/src/main/res/layout/calendario_layout.xml" value="0.22644927536231885" />
         <entry key="..\:/Users/aunai/Documents/AndroidReto/APLICACION_RETO/app/src/main/res/layout/calendariolayout.xml" value="0.121875" />
         <entry key="..\:/Users/aunai/Documents/AndroidReto/APLICACION_RETO/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />

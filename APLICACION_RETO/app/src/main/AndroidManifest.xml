@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.APLICACION_RETO">
         <activity
+            android:name=".Citas"
+            android:exported="false" />
+        <activity
+            android:name=".AdaptadorCitas"
+            android:exported="false" />
+        <activity
             android:name=".AdaptadorCatalogo"
             android:exported="true" />
         <activity

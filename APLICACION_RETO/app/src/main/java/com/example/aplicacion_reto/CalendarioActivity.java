@@ -3,6 +3,7 @@ package com.example.aplicacion_reto;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Build;
 import android.os.Bundle;
@@ -33,6 +34,7 @@ public class CalendarioActivity extends AppCompatActivity {
         reloj.setHour(reloj.getHour()+1);
 
         Button boton_agregar=findViewById(R.id.btnAgregar);
+        Button boton_vercitas=findViewById(R.id.btnVerCita);
         CalendarView calendario=findViewById(R.id.calendarView);
         EditText nota_texto=findViewById(R.id.txt_nota);
 
@@ -68,6 +70,15 @@ public class CalendarioActivity extends AppCompatActivity {
                     Toast toast =Toast.makeText(getApplicationContext(),"Tiene que poner una descripción ", Toast.LENGTH_SHORT);
                     toast.show();
                 }
+            }
+        });
+
+
+        Intent intentCITAS= new Intent(this, Citas.class);
+        boton_vercitas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(intentCITAS);
             }
         });
     }

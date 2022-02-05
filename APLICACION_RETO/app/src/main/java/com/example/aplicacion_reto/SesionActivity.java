@@ -19,7 +19,7 @@ public class SesionActivity extends AppCompatActivity {
         setContentView(R.layout.activity_sesion);
 
         Button btnIniciar = findViewById(R.id.btnIniciar);
-        EditText editUsuario = findViewById(R.id.editUsuario);
+        EditText editUsuario = findViewById(R.id.editCita);
         EditText editPassword = findViewById(R.id.editPwd);
 
 

@@ -41,16 +41,6 @@ public class AdaptadorCatalogo extends RecyclerView.Adapter<AdaptadorCatalogo.Pr
     public void onBindViewHolder(@NonNull ProductosViewHolder productosViewHolder, @SuppressLint("RecyclerView") final int i) {
         productosViewHolder.txtDescripcion.setText(listaProductos.get(i).getDescripcion());
         productosViewHolder.txtPrecio.setText("Precio: "+listaProductos.get(i).getPrecio());
-        productosViewHolder.imgb.setImageDrawable();
-
-        String uri = "@drawable/"+i;
-
-        int imageResource = getResources().getIdentifier(uri, null, getPackageName());
-
-        imageview= (ImageView)findViewById(R.id.imageView);
-        Drawable res = getResources().getDrawable(imageResource);
-        imageView.setImageDrawable(res);
-
     }
 
     @Override
