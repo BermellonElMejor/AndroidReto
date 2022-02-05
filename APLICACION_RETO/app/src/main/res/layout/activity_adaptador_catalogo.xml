@@ -18,7 +18,7 @@
 
     <TextView
         android:id="@+id/idPrecio"
-        android:layout_width="56dp"
+        android:layout_width="100dp"
         android:layout_height="19dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="20dp"
