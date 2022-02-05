@@ -29,6 +29,7 @@ public class Catalogo extends AppCompatActivity {
 
         adaptador=new AdaptadorCatalogo(Catalogo.this, listaProductos);
         recView.setAdapter(adaptador);
+
     }
 
     public void cargarArrayList(){

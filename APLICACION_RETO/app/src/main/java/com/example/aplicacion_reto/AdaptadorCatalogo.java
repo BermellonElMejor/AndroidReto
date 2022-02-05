@@ -23,6 +23,7 @@ public class AdaptadorCatalogo extends RecyclerView.Adapter<AdaptadorCatalogo.Pr
 
     private Context context;
     private List<Producto> listaProductos = new ArrayList<>();
+    private List<Producto> listaCompra = new ArrayList<>();
 
 
     public AdaptadorCatalogo(Context context, List<Producto> listaProductos){
@@ -41,6 +42,13 @@ public class AdaptadorCatalogo extends RecyclerView.Adapter<AdaptadorCatalogo.Pr
     public void onBindViewHolder(@NonNull ProductosViewHolder productosViewHolder, @SuppressLint("RecyclerView") final int i) {
         productosViewHolder.txtDescripcion.setText(listaProductos.get(i).getDescripcion());
         productosViewHolder.txtPrecio.setText("Precio: "+listaProductos.get(i).getPrecio());
+
+        int id = context.getResources().getIdentifier("producto_"+i, "drawable", context.getPackageName());
+        try{
+            productosViewHolder.imgb.setImageResource(id);
+        }catch (Exception e){
+            productosViewHolder.imgb.setImageResource(R.drawable.gaming_grandma_logo);
+        }
     }
 
     @Override
